@@ -2,8 +2,8 @@ from telegram import Update
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
 
 # 設定bot的token和群組ID
-TOKEN = 'XXXXXXXXXXX'  # 將'YOUR_BOT_TOKEN'替換成從BotFather獲得的token
-GROUP_ID = '-XXXXXXXXXXXXXXX'  # 將'YOUR_GROUP_CHAT_ID'替換成目標群組的ID
+TOKEN = 'TOKEN'  # 將'YOUR_BOT_TOKEN'替換成從BotFather獲得的token
+GROUP_ID = '-GROUP_ID'  # 將'YOUR_GROUP_CHAT_ID'替換成目標群組的ID
 
 def start(update: Update, context: CallbackContext):
     update.message.reply_text('您好！請發送一個影片，我將把它轉發到群組。')
